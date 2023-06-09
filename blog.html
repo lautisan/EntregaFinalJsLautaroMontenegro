@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Hardware Store</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Hardware Store</h1>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <ul class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+            <button class="ham">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+            <div class="navbar" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbar">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Nuestro blog</h2>
+        <section class="contenedor-blog">
+            <div class="blog">
+                <article>
+                    <h2 class="titulo-entrada">El mejor control para jugar en PC como si fuera una consola</h2>
+                    <div class="imagen">
+                        <img src="img/controlentrada.jpg" alt="imagen-blog">
+                    </div>
+                    <div class="entrada-meta">
+                        
+                    </div>
+                    <div class="entrada-blog">
+                        <h3>Microsoft Xbox One Elite Wireless Series 2</h3>
+                        <p>El mejor con mucha diferencia. Microsoft ya se lució con la primera versión de este Elite
+                            Controller, pero es que
+                            ahora con la segunda versión lo ha mejorado todavía más, con un agarre más agradable,
+                            batería integrada y dock de
+                            carga, y mayores capacidades de personalización, incluyendo por supuesto los sticks y
+                            gatillos adicionales. </p>
+                        <p>Es
+                            además un mando que se integra perfectamente con Windows 10 e incluso tiene una aplicación
+                            integrada que nos
+                            permitirá configurarlo todo a nuestro gusto. El mejor mando, pero también el más caro de
+                            todos, ojo.</p>
+                    </div>
+                    <a href="" class="btn text-center">Leer mas</a>
+
+                </article>
+                <article>
+                    <h2 class="titulo-entrada">Podría no haber stock de PC en navidad</h2>
+                    <div class="imagen">
+                        <img src="img/pc-stock.jpg" alt="imagen-blog">
+                    </div>
+                    <div class="entrada-meta">
+                        
+                    </div>
+                    <div class="entrada-blog">
+                        <p>La demanda es tan alta que actualmente el número de contenedores es tan grande que están varados en los
+                            barcos a la espera de que los puertos puedan trabajar los que han sido descargados. Ahora ya tenemos chips en mayor
+                            o menor medida, pero hay un problema de logística que impedirá que la gran mayoría llegue a tiempo para llenar
+                            estanterías, por lo que un procesador, una tarjeta gráfica o un teclado no pueden llegar desde el punto A hacia el
+                            B.</p>
+                        <p>Esto inyecta más presión a la cadena de suministro, por lo que los fabricantes lanzan el aviso: hay que planificar
+                            con anticipación las compras y además estar abiertos a adquirir una alternativa al producto que estemos buscando,
+                            puesto que es posible que no estén disponibles ni para Black Friday ni para Navidad. Por ello, si tenéis algo que
+                            necesitáis o queréis a tiro, quizás sea buen momento para adquirirlo antes que esperar y quedarnos sin nada durante
+                            meses o más tiempo.</p>
+                    </div>
+                    <a href="" class="btn text-center">Leer mas</a>
+                </article>
+
+            </div>
+
+            <aside>
+                <h3>Otras entrada del blog</h3>
+                <ul>
+                    <li><a href="#">Mejores controles</a></li>
+                    <li><a href="#">PC y el stock</a></li>
+                </ul>
+            </aside>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav>
+                    <a href="">Hardware</a>
+                    <a href="">Sotfware</a>
+                    <a href="">Perifericos</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <nav>
+                    <a href="">Nuestra historia</a>
+                    <a href="">Mision y valores</a>
+                    <a href="">Carreras</a>
+                    <a href="">Politica privacidad</a>
+                    <a href="">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="">Preguntas frecuentes</a>
+                    <a href="">Ayuda en linea</a>
+                    <a href="">Confianza y seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center">Todos los derechos reservados</p>
+    </footer>
+<script src="js/carrito.js"></script>
+<script src="js/pedidos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

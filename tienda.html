@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Hardware Store</title>
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">Hardware Store</h1>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <ul class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+            <button class="ham">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+            <div class="navbar" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbar">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="contenido-principal contenedor">
+    <h2 class="text-center">Nuestros productos</h2>
+    <div class="listado-productos" id="listar-productos"> </div>
+
+        <!--PRODUCTOS CON JS-->
+        <template id="template-card">
+            <div class="producto">
+                <img src="img/producto1.jpg" id="imagen" alt="Imagen del producto, que es una PC">
+                <div class="texto-producto text-center first-item">
+                    <h3 id="titulo">Ryzen 3 3200 16ram</h3>
+                    <p>¡La mejor experiencia para jugar juegos actuales! Además, trae 5 Juegos Instalados: FORTNITE,
+                        CSGO, NFS PAYBACK, LOL y
+                        MINECRAFT. (Los juegos NO son intercambiables, puede cambiarlos cada cliente a su gusto)
+                    </p>
+                    <h4 class="card-title pricing-card-title precio"><span class="precio">$1599</span></h4>
+                    <a href="#" class="btn agregar-carrito" data-id="1">Agregar al carrito</a>
+                </div>
+                <!---INFORMACION DEL PRODUCTO-->
+            </div>
+            <!--PRODUCTO-->
+        </template>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid contenedor">
+        <div>
+            <h3>Categorias</h3>
+            <nav>
+                <a href="">Hardware</a>
+                <a href="">Sotfware</a>
+                <a href="">Perifericos</a>
+            </nav>
+        </div>
+        <div>
+            <h3>Sobre nosotros</h3>
+            <nav>
+                <a href="">Nuestra historia</a>
+                <a href="">Mision y valores</a>
+                <a href="">Carreras</a>
+                <a href="">Politica privacidad</a>
+                <a href="">Terminos del servicio</a>
+            </nav>
+        </div>
+        <div>
+            <h3>Soporte</h3>
+            <nav>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Ayuda en linea</a>
+                <a href="">Confianza y seguridad</a>
+            </nav>
+        </div>
+    </div>
+    <p class="text-center">Todos los derechos reservados</p>
+</footer>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedidos.js"></script>
+    <script src="js/stock.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
